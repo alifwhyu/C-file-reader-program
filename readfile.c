@@ -8,7 +8,7 @@ int main()
 
     if ((fptr = fopen("file.txt", "r")) == NULL)
     {
-        printf("Error! opening file");
+        printf("Terjadi kesalahan dalam membuka file");
         // exit from program if file pointer returns NULL.
         exit(1);         
     }
@@ -16,7 +16,7 @@ int main()
     // read the text until newline 
     fscanf(fptr,"%[^\n]", c);
 
-    printf("Data from the file:\n%s", c);
+    printf("Data dari file:\n%s", c);
     fclose(fptr);
     
     return 0;
